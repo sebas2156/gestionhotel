@@ -1,77 +1,106 @@
+/* styles/RegistroHabitacionStyles.css */
 .registro-habitacion-container {
-    width: 90%;
-    margin: 0 auto;
-    background-color: #f8f8f8;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .titulo {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .formulario {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .fila {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-  }
-  
-  .campo {
-    display: flex;
-    flex-direction: column;
-    width: 48%;
-  }
-  
-  .campo label {
-    font-size: 16px;
-    margin-bottom: 5px;
-  }
-  
-  .campo select, 
-  .campo input, 
-  .campo textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-    width: 100%;
-  }
-  
-  textarea {
-    resize: none;
-    height: 80px;
-  }
-  
-  .botones {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .btn-atras {
-    background-color: #666;
-    color: white;
-  }
-  
-  .btn-registrar {
-    background-color: black;
-    color: white;
-  }
-  
+  max-width: 800px;
+  margin: 30px auto; /* Mayor margen superior e inferior */
+  padding: 40px; /* Mayor padding para un mejor espacio */
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Sombra más profunda */
+  background: linear-gradient(145deg, #ffffff, #f9f9f9); /* Fondo con degradado */
+  border: 2px solid #e0e0e0; /* Bordes del contenedor */
+}
+
+.titulo {
+  text-align: center;
+  font-size: 30px; /* Título más grande */
+  color: #3f51b5; /* Color del título */
+  margin-bottom: 30px; /* Mayor separación */
+  font-weight: bold; /* Título en negrita */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* Espacio aumentado entre campos */
+}
+
+.fila {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px; /* Mayor separación entre campos en la fila */
+}
+
+.campo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px; /* Espacio debajo de las etiquetas */
+  font-weight: bold;
+  color: #555; /* Color de las etiquetas */
+}
+
+select, input[type="text"], textarea {
+  padding: 12px; /* Mayor padding para mayor comodidad */
+  border: 1px solid #3f51b5; /* Color de borde */
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+}
+
+select:focus, input[type="text"]:focus, textarea:focus {
+  border-color: #3f51b5; /* Color del borde al enfocar */
+  outline: none; /* Quitar el borde predeterminado */
+  box-shadow: 0 0 5px rgba(63, 81, 181, 0.5); /* Sombra sutil al enfocar */
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px; /* Aumento de altura mínima */
+}
+
+.botones {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px; /* Mayor separación superior */
+}
+
+.btn-atras, .btn-registrar {
+  padding: 12px 20px; /* Mayor padding para botones */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; /* Transiciones para el fondo y sombra */
+  font-weight: bold; /* Texto en negrita */
+}
+
+.btn-atras {
+  background-color: #f44336; /* Color de fondo rojo */
+  color: white;
+}
+
+.btn-registrar {
+  background-color: #4CAF50; /* Color de fondo verde */
+  color: white;
+}
+
+.btn-atras:hover {
+  background-color: #d32f2f; /* Color al pasar el mouse */
+  transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+}
+
+.btn-registrar:hover {
+  background-color: #388E3C; /* Color al pasar el mouse */
+  transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+}
+.icon {
+  margin-right: 8px; /* Espacio entre el icono y el texto */
+  color: #3f51b5; /* Color de los iconos */
+  font-size: 18px; /* Tamaño de los iconos */
+}

@@ -13,6 +13,9 @@ const Sidebar = () => {
         <Link to="/registro-habitacion">Registro de habitaciones</Link>
       </div>
       <div className="nav-item">
+        <Link to="/editar-habitacion">Editar Habitacion</Link>
+      </div>
+      <div className="nav-item">
         <Link to="/ventas">Ventas</Link>
       </div>
       <div className="nav-item">
