@@ -1,11 +1,11 @@
-// App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import Home from './pages/Home';
 import RegistroHabitacion from './pages/Registrohabitacion';
 import EditarHabitacion from './pages/EditarHabitacion';
-import './styles/AppStyles.css';
+import ThemeToggle from './components/ThemeToggle';
+
 
 const App = () => {
   return (

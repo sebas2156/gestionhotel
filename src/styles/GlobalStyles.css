@@ -1,0 +1,111 @@
+/* GlobalStyles.css */
+
+/* Importa la fuente Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Colores personalizados */
+:root {
+    --text-color: #1a1a1a;
+    --background-color: #f0f2f5;
+    --primary-color: #6bb4c4;
+    --secondary-color: #374151;
+    --accent-color: #256d85;
+    --button-save: #00ea08; /* Verde para botón de guardar */
+    --button-cancel: #f44336; /* Rojo para botón de cancelar */
+    --icon-color: #1e1f1e; /* Color para los iconos */
+}
+
+/* Reseteo básico y tipografía */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* Estilos de enlaces */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+/* Estilos Globales para Botones */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    font-weight: bold;
+}
+
+/* Estilos para botones específicos */
+.btn-atras {
+    background-color: var(--button-cancel);
+    color: white;
+}
+
+.btn-registrar {
+    background-color: var(--button-save);
+    color: white;
+}
+
+.btn-atras:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-registrar:hover {
+    background-color: #8e3838;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos de íconos */
+.icon {
+    margin-right: 8px;
+    color: var(--icon-color) !important;
+    font-size: 18px;
+}
+
+/* Estilos para elementos de código */
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+
+
+/* GlobalStyles.css */
+
+/* Si necesitas mantener el layout */
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.content-container {
+  flex-grow: 1;
+  background-color: #f4fdfe;
+  padding: 20px;
+  overflow-y: auto;
+}

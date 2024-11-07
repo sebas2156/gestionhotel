@@ -1,31 +1,36 @@
-// components/Sidebar.jsx
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import HotelIcon from '../icons/hotel.png'; // Cambia a la ruta de tu logo
 import '../styles/SidebarStyles.css';
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
+      {/* Contenedor del icono del hotel */}
+      <div className="hotel-icon-container">
+        <img src={HotelIcon} alt="Hotel Logo" className="hotel-icon" />
+      </div>
+      
       <div className="nav-item">
-        <Link to="/">Inicio</Link>
+        <NavLink exact to="/" activeClassName="active">Inicio</NavLink>
       </div>
       <div className="nav-item">
-        <Link to="/registro-habitacion">Registro de habitaciones</Link>
+        <NavLink to="/registro-habitacion" activeClassName="active">Registro de habitaciones</NavLink>
       </div>
       <div className="nav-item">
-        <Link to="/editar-habitacion">Editar Habitacion</Link>
+        <NavLink to="/editar-habitacion" activeClassName="active">Editar Habitación</NavLink>
       </div>
       <div className="nav-item">
-        <Link to="/ventas">Ventas</Link>
+        <NavLink to="/ventas" activeClassName="active">Ventas</NavLink>
       </div>
       <div className="nav-item">
-        <Link to="/almacen">Almacén</Link>
+        <NavLink to="/almacen" activeClassName="active">Almacén</NavLink>
       </div>
       <div className="nav-item">
-        <Link to="/parqueo">Parqueo</Link>
+        <NavLink to="/parqueo" activeClassName="active">Parqueo</NavLink>
       </div>
       <div className="nav-item">
-        <Link to="/reportes">Reportes</Link>
+        <NavLink to="/reportes" activeClassName="active">Reportes</NavLink>
       </div>
     </div>
   );

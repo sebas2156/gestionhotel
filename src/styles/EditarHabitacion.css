@@ -1,67 +1,71 @@
-/* styles/EditarHabitacion.css */
+  /* Estilos específicos para EditarHabitacion */
+
 .editar-habitacion-container {
   max-width: 800px;
   margin: 20px auto;
   padding: 30px;
-  background-color: #f9f9f9;
-  border-radius: 15px;
+  background-color: #f9f9f9; /* Color de fondo */
+  border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  overflow: auto; /* Asegúrate de que el contenedor no tenga overflow */
+  overflow: auto; /* Controla el desbordamiento */
 }
 
-.titulo {
+.editar-habitacion-titulo {
   text-align: center;
   font-size: 28px;
-  color: #3f51b5;
+  color: #b5413f; /* Color del título */
   margin-bottom: 30px;
+  font-weight: bold;
 }
 
-.formulario {
+.editar-habitacion-formulario {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.fila {
+.editar-habitacion-fila {
   display: flex;
   justify-content: space-between;
   gap: 20px;
 }
 
-.campo {
+.editar-habitacion-campo {
   flex: 1;
 }
 
-.campo label {
+.editar-habitacion-campo label {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
+  color: #374151; /* Color de las etiquetas */
 }
 
-.campo select,
-.campo input,
-.campo textarea {
+.editar-habitacion-campo select,
+.editar-habitacion-campo input,
+.editar-habitacion-campo textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #3f51b5;
-  border-radius: 8px;
+  border: 1px solid #3f51b5; /* Color de borde */
+  border-radius: 7px;
   transition: border-color 0.3s, box-shadow 0.3s;
+  font-size: 16px;
 }
 
-.campo select:focus,
-.campo input:focus,
-.campo textarea:focus {
-  border-color: #3f51b5;
+.editar-habitacion-campo select:focus,
+.editar-habitacion-campo input:focus,
+.editar-habitacion-campo textarea:focus {
+  border-color: #0023e6;
   outline: none;
   box-shadow: 0 0 5px rgba(63, 81, 181, 0.5);
 }
 
 textarea {
   resize: vertical;
-  height: 100px;
+  min-height: 100px; /* Altura mínima para el textarea */
 }
 
-.botones {
+.editar-habitacion-botones {
   display: flex;
   justify-content: space-between;
 }
@@ -70,19 +74,20 @@ textarea {
 .btn-guardar {
   padding: 10px 20px;
   border: none;
-  border-radius: 8px;
+  border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s, transform 0.2s;
+  font-weight: bold;
 }
 
 .btn-atras {
-  background-color: #f44336;
+  background-color: #b1b1b1; /* Color del botón de cancelar */
   color: white;
 }
 
 .btn-guardar {
-  background-color: #4CAF50;
+  background-color: #89ba89; /* Color del botón de guardar */
   color: white;
 }
 
@@ -92,12 +97,12 @@ textarea {
 }
 
 .btn-guardar:hover {
-  background-color: #388E3C;
+  background-color: #89ba89;
   transform: scale(1.05);
 }
 
 .icon {
   margin-right: 8px;
-  color: #3f51b5;
+  color: #425652; /* Color del icono */
   font-size: 18px;
 }
