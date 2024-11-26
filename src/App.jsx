@@ -5,6 +5,7 @@ import Sidebar from './components/Sidebar';
 import Home from './pages/Home';
 import RegistroHabitacion from './pages/Registrohabitacion';
 import EditarHabitacion from './pages/EditarHabitacion';
+import RegistroHabitaciones from './pages/RegistroHabitaciones';
 import './styles/AppStyles.css';
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/registro-habitacion" element={<RegistroHabitacion />} />
             <Route path="/editar-habitacion" element={<EditarHabitacion />} />
+            <Route path="/registro-habitaciones" element={<RegistroHabitaciones />} />
             {/* Agregar más rutas aquí */}
           </Routes>
         </div>

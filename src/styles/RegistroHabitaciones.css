@@ -1,0 +1,95 @@
+.registro-habitaciones-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .titulo {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .barra-superior {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .buscador {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .btn-buscar,
+  .btn-agregar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-buscar {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .btn-agregar {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .tabla-habitaciones {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .tabla-habitaciones th,
+  .tabla-habitaciones td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .tabla-habitaciones th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .estado.disponible {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .estado.ocupado {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .btn-editar,
+  .btn-eliminar {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-editar {
+    background-color: #ffc107;
+    color: white;
+  }
+  
+  .btn-eliminar {
+    background-color: #dc3545;
+    color: white;
+  }
+  

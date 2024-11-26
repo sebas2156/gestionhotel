@@ -1,14 +1,15 @@
 /* styles/SidebarStyles.css */
 .sidebar {
   width: 250px;
-  background-color: #ffffff; /* Fondo limpio */
+  background-color: #f8f9fa; /* Fondo más claro */
   padding: 20px;
   display: flex;
   flex-direction: column;
   height: 100vh;
-  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
   font-family: 'Arial', sans-serif; /* Tipografía moderna */
   border-right: 1px solid #e0e0e0; /* Línea de separación */
+  transition: background-color 0.3s; /* Transición de fondo */
 }
 
 .sidebar-header {
@@ -16,37 +17,65 @@
   font-weight: bold; /* Título en negrita */
   margin-bottom: 20px; /* Espaciado debajo del título */
   color: #007BFF; /* Color atractivo para el título */
+  text-align: center; /* Centrar el título */
+}
+
+.nav-category {
+  margin: 15px 0; /* Espacio alrededor de la categoría */
+}
+
+.category-title {
+  display: flex;
+  justify-content: space-between; /* Espaciado entre texto y flecha */
+  cursor: pointer; /* Cursor pointer */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 8px; /* Bordes más redondeados */
+  transition: background-color 0.3s; /* Transición de fondo */
+}
+
+.category-title:hover {
+  background-color: #e9ecef; /* Color de fondo al pasar el mouse */
+}
+
+.arrow {
+  transition: transform 0.3s; /* Transición para la flecha */
+}
+
+.arrow.open {
+  transform: rotate(180deg); /* Rota la flecha cuando se abre */
+}
+
+.sub-items {
+  max-height: 0; /* Ocultar por defecto */
+  overflow: hidden; /* Ocultar el desbordamiento */
+  transition: max-height 0.3s ease-out; /* Transición suave */
+}
+
+.sub-items.show {
+  max-height: 200px; /* Altura máxima al desplegar */
 }
 
 .nav-item {
   margin: 10px 0;
   font-size: 18px; /* Tamaño de fuente más grande */
   cursor: pointer;
-  padding: 12px 15px; /* Mayor padding */
+  padding: 10px 15px; /* Mayor padding */
   border-radius: 8px; /* Bordes más redondeados */
-  transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
-  display: flex; /* Flexbox para centrar contenido */
-  align-items: center; /* Centrar verticalmente */
+  transition: background-color 0.3s; /* Transiciones suaves */
 }
 
 .nav-item a {
   text-decoration: none;
   color: #333; /* Color de texto oscuro */
-  flex-grow: 1; /* Permitir que el enlace ocupe todo el espacio disponible */
 }
 
 .nav-item:hover {
-  background-color: #f0f0f0; /* Color de fondo más suave */
-  transform: scale(1.02); /* Efecto de escalado */
+  background-color: #e0e0e0; /* Color de fondo más suave */
 }
 
 .nav-item.active {
   background-color: #007BFF; /* Color activo */
   color: white; /* Texto blanco */
-}
-
-.icon {
-  margin-right: 10px; /* Espaciado entre el icono y el texto */
 }
 
 .footer {
@@ -56,4 +85,26 @@
   text-align: center; /* Centrar texto en el pie de página */
   padding: 10px 0; /* Espaciado interno */
   border-top: 1px solid #e0e0e0; /* Línea de separación superior */
+}
+
+.icon {
+  margin-right: 10px; /* Espaciado entre el icono y el texto */
+  font-size: 18px; /* Tamaño de los iconos */
+  color: #007BFF; /* Color de los iconos */
+}
+
+.nav-item {
+  display: flex; /* Flexbox para alinear iconos y texto */
+  align-items: center; /* Centrar verticalmente */
+  padding: 10px 15px; /* Espaciado interno */
+  border-radius: 8px; /* Bordes más redondeados */
+  transition: background-color 0.3s; /* Transiciones suaves */
+}
+
+.nav-item a {
+  display: flex; /* Flexbox para alinear icono y texto */
+  align-items: center; /* Centrar verticalmente */
+  text-decoration: none; /* Quitar subrayado */
+  color: #333; /* Color de texto oscuro */
+  flex-grow: 1; /* Permitir que el enlace ocupe todo el espacio disponible */
 }
